@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import { lazy } from 'react';
 
-const HomePage = lazy(() => import('./pages/HomePage'));
-const TweetsPage = lazy(() => import('./pages/TweetsPage'));
+const HomePage = lazy(() => import('./components/pages/HomePage'));
+const TweetsPage = lazy(() => import('./components/pages/TweetsPage'));
 
-const App = () => {
+const UseRoutes = () => {
   return (
     <Routes>
       <Route path="/tweets" element={<TweetsPage />} />
@@ -13,4 +13,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default UseRoutes;
