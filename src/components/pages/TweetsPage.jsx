@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+import TweetsList from '../modules/TweetsList/TweetsList';
+
 import { getAllUsers } from '../shared/api/tweets';
 
 const TweetsPage = () => {
@@ -12,7 +14,7 @@ const TweetsPage = () => {
       setLoading(true);
       try {
         const result = await getAllUsers();
-        setItems(prevState => [...prevState, ...result]);
+        setItems(prevState => [...result]);
       } catch (error) {
         setError(error.message);
       } finally {
@@ -23,7 +25,11 @@ const TweetsPage = () => {
     fetchAPI();
   }, []);
 
-  return <div>TweetsPage</div>;
+  return (
+    <div className="container">
+      <TweetsList items={items} />
+    </div>
+  );
 };
 
 export default TweetsPage;
