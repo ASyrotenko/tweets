@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div className="container">
-      <NavLink to={`/tweets`} className="navBtn">
+      <NavLink to={`/users`} className="navBtn">
         Tweets
       </NavLink>
       <p className="homeText">
