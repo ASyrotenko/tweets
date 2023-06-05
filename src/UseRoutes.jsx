@@ -15,6 +15,7 @@ const UseRoutes = () => {
       }
     >
       <Routes>
+        <Route path="/home" element={<HomePage />} />
         <Route path="/users" element={<TweetsPage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
