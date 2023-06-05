@@ -45,7 +45,7 @@ const TweetsPage = () => {
           <TailSpin color="#5cd3a8" />
         </div>
       )}
-      <NavLink to={`/`} className={css.btn}>
+      <NavLink to={`/home`} className={css.btn}>
         Go Home
       </NavLink>
       {error && (
