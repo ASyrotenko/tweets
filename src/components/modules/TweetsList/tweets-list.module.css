@@ -91,7 +91,8 @@
   color: #ebd8ff;
 }
 
-.button {
+.button,
+.buttonFollowed {
   cursor: pointer;
   margin: 26px auto 0;
   width: 196px;
@@ -111,7 +112,37 @@
   transition: all 250ms linear;
 }
 
-.button:hover,
-.button:focus {
-  background: #dec4fa;
+.buttonFollowed {
+  background: #5cd3a8;
+}
+
+.btn {
+  cursor: pointer;
+  width: 280px;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 250ms linear;
+}
+
+.btn:hover {
+  background-color: #5cd3a8;
+}
+
+.loadMoreBtn {
+  margin: 0 auto;
+  width: 380px;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 250ms linear;
+}
+
+.loadMoreBtn:hover {
+  background-color: #5cd3a8;
 }
