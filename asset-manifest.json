@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/tweets/static/css/main.df867bbe.css",
+    "main.js": "/tweets/static/js/main.0e579e0e.js",
+    "static/js/76.a4c47a4f.chunk.js": "/tweets/static/js/76.a4c47a4f.chunk.js",
+    "static/css/185.5ea2b39f.chunk.css": "/tweets/static/css/185.5ea2b39f.chunk.css",
+    "static/js/185.3e4d5d3e.chunk.js": "/tweets/static/js/185.3e4d5d3e.chunk.js",
+    "static/js/153.2e9e81c3.chunk.js": "/tweets/static/js/153.2e9e81c3.chunk.js",
+    "static/media/Montserrat-SemiBold.eot": "/tweets/static/media/Montserrat-SemiBold.262fb106797e141d7adf.eot",
+    "static/media/Montserrat-SemiBold.ttf": "/tweets/static/media/Montserrat-SemiBold.8771894959de6e640354.ttf",
+    "static/media/Montserrat-Medium.eot": "/tweets/static/media/Montserrat-Medium.418e43db3ef66b97a7ef.eot",
+    "static/media/Montserrat-Medium.ttf": "/tweets/static/media/Montserrat-Medium.693c527aec0de211945e.ttf",
+    "static/media/Montserrat-Medium.woff": "/tweets/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff",
+    "static/media/Montserrat-SemiBold.woff": "/tweets/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff",
+    "static/media/Montserrat-Medium.woff2": "/tweets/static/media/Montserrat-Medium.d6bbb7c3c86aa8edcd0a.woff2",
+    "static/media/Montserrat-SemiBold.woff2": "/tweets/static/media/Montserrat-SemiBold.1d679c8257a6a9caa9bd.woff2",
+    "static/media/tweet-bg.png": "/tweets/static/media/tweet-bg.f8a3ae4c8e3290a50bc3.png",
+    "index.html": "/tweets/index.html",
+    "main.df867bbe.css.map": "/tweets/static/css/main.df867bbe.css.map",
+    "main.0e579e0e.js.map": "/tweets/static/js/main.0e579e0e.js.map",
+    "76.a4c47a4f.chunk.js.map": "/tweets/static/js/76.a4c47a4f.chunk.js.map",
+    "185.5ea2b39f.chunk.css.map": "/tweets/static/css/185.5ea2b39f.chunk.css.map",
+    "185.3e4d5d3e.chunk.js.map": "/tweets/static/js/185.3e4d5d3e.chunk.js.map",
+    "153.2e9e81c3.chunk.js.map": "/tweets/static/js/153.2e9e81c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df867bbe.css",
+    "static/js/main.0e579e0e.js"
+  ]
+}
