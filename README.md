@@ -1,4 +1,4 @@
-<h1 align="center">Tweets App</h1>
+h1 align="center">Tweets App</h1>
 
 <p>Welcome to my simple App.</p>
 
