@@ -55,7 +55,7 @@ const TweetsPage = () => {
       )}
       <TweetsList items={items} />
       {items.length > 0 && (
-        <button type="button" onClick={onLoadMore} className={css.loadMoreBtn}>
+        <button type="button" onClick={onLoadMore} className="loadMoreBtn">
           Load more
         </button>
       )}

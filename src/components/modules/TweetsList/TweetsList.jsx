@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import { newNumberFormat } from '../../shared/scripts/newNumberFormat';
 
@@ -56,3 +57,15 @@ const TweetsList = ({ items }) => {
 };
 
 export default TweetsList;
+
+TweetsList.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      user: PropTypes.string.isRequired,
+      tweets: PropTypes.number.isRequired,
+      followers: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
+    })
+  ),
+};

@@ -66,7 +66,6 @@ code {
   margin: 0 auto;
   max-width: 1280px;
   padding: 20px;
-  outline: 1px solid tomato;
 }
 
 ul {
@@ -88,6 +87,7 @@ a {
   border-radius: 5px;
   padding: 10px 15px;
   cursor: pointer;
+  text-transform: uppercase;
   width: 280px;
   background-color: transparent;
   font-weight: 600;
@@ -117,4 +117,20 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+}
+
+.loadMoreBtn {
+  margin: 0 auto;
+  width: 380px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 250ms linear;
+}
+
+.loadMoreBtn:hover {
+  background-color: #5cd3a8;
 }

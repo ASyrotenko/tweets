@@ -1,5 +1,5 @@
 .list {
-  padding: 20px 0;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -118,8 +118,10 @@
 
 .btn {
   cursor: pointer;
+  text-transform: uppercase;
   width: 280px;
   padding: 10px 15px;
+  margin-left: 30px;
   background-color: transparent;
   border: 1px solid black;
   text-align: center;
@@ -129,20 +131,5 @@
 }
 
 .btn:hover {
-  background-color: #5cd3a8;
-}
-
-.loadMoreBtn {
-  margin: 0 auto;
-  width: 380px;
-  cursor: pointer;
-  padding: 10px 15px;
-  background-color: transparent;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background-color 250ms linear;
-}
-
-.loadMoreBtn:hover {
   background-color: #5cd3a8;
 }
