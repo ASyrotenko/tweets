@@ -5,11 +5,12 @@ import { TailSpin } from 'react-loader-spinner';
 import TweetsList from '../modules/TweetsList/TweetsList';
 import css from '../modules/TweetsList/tweets-list.module.css';
 
-import { getAllUsers } from '../shared/api/tweets';
+import { getAllUsers, allUsers } from '../shared/api/tweets';
 import { smoothScroll } from '../shared/scripts/smoothScroll';
 
 const TweetsPage = () => {
   const [items, setItems] = useState([]);
+  const [countUsers, setCountUsers] = useState();
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -19,6 +20,8 @@ const TweetsPage = () => {
       setLoading(true);
       try {
         const result = await getAllUsers(page);
+        const totalUsers = await allUsers();
+        setCountUsers(totalUsers);
         if (page === 1) {
           return setItems([...result]);
         }
@@ -32,7 +35,7 @@ const TweetsPage = () => {
     };
 
     fetchAPI();
-  }, [page]);
+  }, [page, countUsers]);
 
   const onLoadMore = () => {
     setPage(prevState => prevState + 1);
@@ -54,7 +57,7 @@ const TweetsPage = () => {
         </p>
       )}
       <TweetsList items={items} />
-      {items.length > 0 && (
+      {items.length > 0 && items.length < countUsers && (
         <button type="button" onClick={onLoadMore} className="loadMoreBtn">
           Load more
         </button>

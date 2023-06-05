@@ -13,3 +13,8 @@ export const getAllUsers = async page => {
   });
   return data;
 };
+
+export const allUsers = async () => {
+  const { data } = await instance.get('/users', {});
+  return data.length;
+};
