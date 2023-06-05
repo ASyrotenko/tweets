@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktweets=self.webpackChunktweets||[]).push([[76],{3076:function(e,s,t){t.r(s);var n=t(1087),a=t(184);s.default=function(){return(0,a.jsxs)("div",{className:"container",children:[(0,a.jsx)(n.OL,{to:"/tweets",className:"navBtn",children:"Tweets"}),(0,a.jsx)("p",{className:"homeText",children:"Sorry for this mess. Did not have enough time to apply beauty."})]})}}}]);
-//# sourceMappingURL=76.a4c47a4f.chunk.js.map
