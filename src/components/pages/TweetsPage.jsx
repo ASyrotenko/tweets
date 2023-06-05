@@ -5,7 +5,7 @@ import { TailSpin } from 'react-loader-spinner';
 import TweetsList from '../modules/TweetsList/TweetsList';
 import css from '../modules/TweetsList/tweets-list.module.css';
 
-import { getAllUsers, allUsers } from '../shared/api/tweets';
+import { getUsersUsingPagination, getAllUsers } from '../shared/api/tweets';
 import { smoothScroll } from '../shared/scripts/smoothScroll';
 
 const TweetsPage = () => {
@@ -19,9 +19,9 @@ const TweetsPage = () => {
     const fetchAPI = async () => {
       setLoading(true);
       try {
-        const result = await getAllUsers(page);
-        const totalUsers = await allUsers();
-        setCountUsers(totalUsers);
+        const result = await getUsersUsingPagination(page);
+        const allUsers = await getAllUsers();
+        setCountUsers(allUsers.length);
         if (page === 1) {
           return setItems([...result]);
         }
